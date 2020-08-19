@@ -50,16 +50,22 @@ table {
 /*================== Base Style ==================*/
 body{
 	background:#66023C;
+	background-color: #66023c;
+	background-image: url("https://www.transparenttextures.com/patterns/subtle-zebra-3d.png");
+
 	color: white;
 	font-family: "CircularStd", sans-serif;
 	font-size: 15px;
-	min-width: 320px;
+	min-width: 200px;
 }
 .wrapper1{
 	margin-top: 55px;
 	margin-right: 20px;
 	border: 1px solid white;
 	background: rgba(0,0,0);
+	width: 300px;
+	
+	
 	
 }
 
@@ -67,42 +73,42 @@ body{
 	margin-top: 55px;
 	margin-right: 20px;
 	border: 1px solid white;
-	background: black
-
-
+	background: black;	
 }
 
 /*========= Header Style ==========*/
+
 .page-header{
 	background: black;
-	display: inline-block;
 	height: 45px;
 	width: 100%;
-	position: absolute;
 	border: 2px solid black;
+	position: absolute;
 	left: 0;
 	top: 0;
+	
+
 }
 .page-header .logo{
 	float: left;
 	padding-top: 20px;
 	box-sizing: border-box;
 	font-size: 25px;
-	
-
-
 }
+
 
 .page-header .header-nav{
 	float: right;
-	margin-right: 90px;
+	margin-left: 90px;
 	font-size: 20px;
+	
 
 }
 
 .header-nav li{
 	float: left;
-	margin-left: 90px;
+	margin-right: 90px;
+	
 }
 
 .header-nav li a{
@@ -121,15 +127,20 @@ main{
 .profile img{
 	width: 200px;
 	height: auto;
-	border-radius: 300px;
+	border-radius:50%;
 	padding: 5px;
+	padding-top: 20px;
 	box-sizing: border-box;
+	margin-left: 52px;
+	
 }
 
 .profile p{
 	padding-top: 10px;
 	box-sizing: border-box;
 	text-align: center;
+	font-weight: 700;
+	font-style: italic;
 
 }
 
@@ -148,21 +159,91 @@ h3::after{
 	height: 2px;
 	width: 160px;
 	background: #ca0500;
-	
-
+}	
+.contact h2::after{
+	content: '.';
+	font-size: 0;
+	display: block;	
+	height: 2px;
+	width: 105px;
+	background: #ca0500;
 }
 
 #about{
 	font-size: 25px;
 }
+.articles{
+	width: 100%;
 
+}
 article{
-	line-height:30px;
-	width: 33%;
+	line-height:25px;
+	width: 100%;
 	float: left;
 	background: rgba(0,0,0,.5);
 	padding-top: 10px;
 	box-sizing: border-box;
+	border: 1px solid white;
+	height: 300px;
+}
+
+.flex-1{
+	margin-left: 10px;
+}
+
+.flex-2 li{
+	margin-left: 40px;
+	list-style-type: disc; 
+
+}
+
+#topicLI{
+	margin-left: 23px;
+	list-style-type: square;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.contact{
+	height: 326px;
+}
+
+#bio{
+	margin-top: 10px;
+	line-height: 18px;
+
+}
+
+#contactTitle{
+	padding-top: 10px;
+	padding-left: 5px;
+	box-sizing: border-box;
+}
+.contact-container{
+	display: flex;
+	flex-direction: column;
+}
+
+.contact li{
+	margin: 10px 40px 30px; 
+}
+
+.contact a{
+	display: inline-block;
+	text-decoration: none;
+	line-height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	background: #444444;
+	color: white;
+}
+
+.contact p{
+	display: inline-block;
+	padding-left: 10px;
 
 }
 

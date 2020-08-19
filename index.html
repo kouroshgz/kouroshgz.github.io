@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Kourosh</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/all.min.css">
 </head>
 
 <body>
@@ -24,8 +25,8 @@
 		<div class="flex-1">
 			<div class="wrapper1">
 				<div class="profile">
-					<img src="images/pp.jpg" alt="profile picture">
-					<p>UCSC Computer Science 23'</p>
+					<img src="images/me.jpg" alt="profile picture">
+					<p>My face!</p>
 				</div>
 			</div>
 		
@@ -33,12 +34,12 @@
 			<div class="contact-container">
 				<div class="wrapper">
 					<div class="contact">
-						<h2> Contact Me: </h2>
+						<h2 id="contactTitle"> Contact Me: </h2>
 						<ul>
-							<li><a href="#" target="_blank">Gmail</a></li>
-							<li><a href="#"	target="_blank">GitHub</a></li>
-							<li><a href="#"	target="_blank">Instagram</a></li>
-							<li><a href="#"	target="_blank">LinkedIn</a></li>
+							<li><a href="mailto:kouroshgz@gmail.com" target="_blank"><i class="fas fa-inbox"></i></a><p>Email</p></li>
+							<li><a href="#"	target="_blank"><i class="fab fa-github"></i></a><p>GitHub</p></li>
+							<li><a href="#"	target="_blank"><i class="fab fa-instagram"></i></a><p>Instagram</p></li>
+							<li><a href="#"	target="_blank"><i class="fab fa-linkedin-in"></i></a><p>LinkedIn</p></li>
 						</ul>
 					</div>
 				</div>
@@ -51,39 +52,30 @@
 				<div class="articles">
 					<h2 id="about">About Me:</h2>
 					<article>
-						<h3>Education History</h3>
-						<ul>
-							<li>UC Riverside</li>
-								<ul>
-									<li>Freshman / 1st Year Biology (Fall 2018 - Spring 2019)</li>
-									<li>GPA 3.18</li>
-								</ul>
-							<li>
-								Los Angeles City College
-							</li>
-								<ul>
-									<li>
-										Sophomore / 1st Year CS (Fall 2019 - Spring 2020)
-									</li>
-									<li>Fall Semester: 4.0 / Spring Semester: 4.0</li>
-									<li>Cumulative GPA Change: 3.18 -> 3.45</li>
-								</ul>
-							<li>UC Santa Cruz</li>
-								<ul>
-									<li>Rising Junior / 2nd Year CS (Fall 2020 -> 2023)</li>
-								</ul>	
-						</ul>
+						<h3>Bio</h3>
+						<p id="bio">
+							Hello and welcome to my page. 
+							<br>
+							<br>
+							I'm a 20 year old 2nd year Computer Science student starting my 3rd year of college at the University of California- Santa Cruz in fall 2020. I started my collge career as a biology student at the University of California- Riverside before I decided to attend Los Angeles City College with the intention of transferring to UCSC as a computer science major.
+							<br>
+							<br>
+							In addition to computer science, I also have an interest in film photography. You can see some of my photographs in the "Photography" section of this website. 
+							<br>
+							<br>
+							Feel free to contact me through any of the listed platforms. A copy of my full resume is available under the "Resume" section of this website.
+						</p>
 					</article>
 
 					<article>
 						<h3>Skills</h3>
 						<ul>
-							<li>Programming Languages:</li>
+							<li id="topicLI">Programming Languages:</li>
 								<ul>
 									<li>C++</li>
 									<li>Python 3</li>
 								</ul>
-							<li>Technologies:</li>
+							<li id="topicLI">Technologies:</li>
 								<ul>
 									<li>HTML5</li>
 									<li>CSS</li>
@@ -96,13 +88,14 @@
 					<article>
 						<h3>Projects</h3>
 						<ul>
-							<li> <a href="https://github.com/kouroshgz/Steam-Avatar-Downloader" target="_blank">Steam-Avatar-Downloader</a></li>
+							<li id="topicLI"> <a href="https://github.com/kouroshgz/Steam-Avatar-Downloader" target="_blank">Steam-Avatar-Downloader</a></li>
 								<ul>
 									<li> <p>Python 3.8.3, Beautiful Soup 4, Pycharm Community Edition</p></li>
 									<li><p>A CLI web scraping script created in Python utilizing the Beautiful Soup 4 library to extract data from
-									html files. Created to automate profile avatar acquisition from the Steam platforms user profile page as
-									an introductory exercise in online data acquisition.
+									html files.
 									</p></li>
+									<li><p>Created to automate profile avatar acquisition from the Steam platforms user profile page as
+									an introductory exercise in online data acquisition.</p></li>
 								</ul>
 						</ul>
 					</article>
