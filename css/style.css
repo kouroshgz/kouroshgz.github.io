@@ -56,83 +56,109 @@ body{
 	color: white;
 	font-family: "CircularStd", sans-serif;
 	font-size: 15px;
-	min-width: 200px;
-}
-.wrapper1{
-	margin-top: 55px;
-	margin-right: 20px;
-	border: 1px solid white;
-	background: rgba(0,0,0);
-	width: 300px;
-	
-	
-	
-}
 
+}
 .wrapper{
-	margin-top: 55px;
-	margin-right: 20px;
 	border: 1px solid white;
 	background: black;	
+
 }
 
 /*========= Header Style ==========*/
+.header-wrapper{
+	width: 1120px;
+	height: 100%;
+	
+
+}
 
 .page-header{
-	background: black;
 	height: 45px;
 	width: 100%;
+	background: black;
 	border: 2px solid black;
-	position: absolute;
-	left: 0;
-	top: 0;
-	
-
-}
-.page-header .logo{
-	float: left;
-	padding-top: 20px;
-	box-sizing: border-box;
-	font-size: 25px;
 }
 
+.page-header .header-wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
 
-.page-header .header-nav{
-	float: right;
-	margin-left: 90px;
+.logo{
+	font-size: 23px;
+}
+
+
+.header-nav{
 	font-size: 20px;
-	
-
+}
+.header-nav ul{
+	display: flex;	
 }
 
-.header-nav li{
-	float: left;
-	margin-right: 90px;
-	
-}
-
-.header-nav li a{
+.header-nav ul a{
 	color: white;
 	text-transform: uppercase;
 	line-height: 66px; /* centers list items by matching header height */
 	text-decoration: none; /* eliminates underline of links */
+	padding: 0 35px;
 }
+
+.header-nav ul a:hover{
+	color: #59f7da;
+}
+
+/*============= Aside ============*/
+.left-column{
+	display: flex;
+	flex-direction: column;
+	margin-left: 5px;
+	margin-right: 12px;
+	width: 300px;
+	box-sizing: content-box;
+	
+}
+
+.wrapper-image{
+	margin-top: 15px;
+	margin-right: 20px;
+	border: 1px solid white;
+	background: rgba(0,0,0);
+	width: 300px;
+}
+
+.contact-wrapper{
+	margin-top: 10px;
+	border: 2px solid black;
+	background: black;
+	width:300px;
+	}
+
 
 /*============= Main =============*/
-main{
+.row{
 	display: flex;
-	flex-basis: 400px;
+	width: 100%
 }
 
-.profile img{
-	width: 200px;
+.profile a img{
+	width: 300px;
 	height: auto;
-	border-radius:50%;
+	border-radius:125%;
 	padding: 5px;
 	padding-top: 20px;
 	box-sizing: border-box;
-	margin-left: 52px;
-	
+}
+
+.profile a img:last-child{
+	display: none;
+}
+.profile a:hover img:last-child {
+	display: block;
+}
+.profile a:hover img:first-child {
+	display:none;
 }
 
 .profile p{
@@ -172,10 +198,12 @@ h3::after{
 #about{
 	font-size: 25px;
 }
-.articles{
-	width: 100%;
 
+.right-column{
+	margin-top: 15px;
+	margin-right: 15px;
 }
+
 article{
 	line-height:25px;
 	width: 100%;
@@ -184,14 +212,17 @@ article{
 	padding-top: 10px;
 	box-sizing: border-box;
 	border: 1px solid white;
-	height: 300px;
+	height: 250px;
+
+
 }
 
-.flex-1{
+article p , article h3{
 	margin-left: 10px;
 }
 
-.flex-2 li{
+
+.right-column li{
 	margin-left: 40px;
 	list-style-type: disc; 
 
@@ -202,6 +233,7 @@ article{
 	list-style-type: square;
 	font-weight: 700;
 	text-transform: uppercase;
+	text-decoration: none;
 	color: #fff;
 }
 
@@ -220,10 +252,7 @@ article{
 	padding-left: 5px;
 	box-sizing: border-box;
 }
-.contact-container{
-	display: flex;
-	flex-direction: column;
-}
+
 
 .contact li{
 	margin: 10px 40px 30px; 
@@ -241,9 +270,33 @@ article{
 	color: white;
 }
 
+.contact a:hover{
+	background: #59f7da;
+	color: black;
+}
+
 .contact p{
 	display: inline-block;
 	padding-left: 10px;
 
 }
 
+.project li{
+	list-style: square;
+}
+
+.project li a{
+	
+	list-style-type: square;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #66dddb;
+}
+
+.subproject{
+	margin-left: 15px;
+}
+.subproject li{
+	list-style: disc;
+}

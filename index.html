@@ -9,9 +9,10 @@
 
 <body>
 	<header class="page-header"> 
-			<div class="logo">
-				<p> Kourosh Ghadiri Zahrani </p>
-			</div>
+			<div class="header-wrapper">
+				<div class="logo">
+					<p> Kourosh Ghadiri Zahrani </p>
+				</div>
 				<nav class="header-nav"> 
 					<ul>
 						<li><a href="#"> Resume</a></li>
@@ -19,35 +20,37 @@
 					</ul>
 
 				</nav>
+			</div>
 	</header>
 
-	<main>
-		<div class="flex-1">
-			<div class="wrapper1">
+
+<div class="row">
+	<aside class="left-column">
+		
+			<div class="wrapper-image">
 				<div class="profile">
+					<a>
 					<img src="images/me.jpg" alt="profile picture">
+					<img src="images/me-color.jpg">
+					</a>
 					<p>My face!</p>
 				</div>
 			</div>
-		
-
-			<div class="contact-container">
-				<div class="wrapper">
+				<div class="contact-wrapper">
 					<div class="contact">
 						<h2 id="contactTitle"> Contact Me: </h2>
 						<ul>
 							<li><a href="mailto:kouroshgz@gmail.com" target="_blank"><i class="fas fa-inbox"></i></a><p>Email</p></li>
-							<li><a href="#"	target="_blank"><i class="fab fa-github"></i></a><p>GitHub</p></li>
-							<li><a href="#"	target="_blank"><i class="fab fa-instagram"></i></a><p>Instagram</p></li>
+							<li><a href="https://github.com/kouroshgz"	target="_blank"><i class="fab fa-github"></i></a><p>GitHub</p></li>
+							<li><a href="https://www.instagram.com/kouroshgz/?hl=en"target="_blank"><i class="fab fa-instagram"></i></a><p>Instagram</p></li>
 							<li><a href="#"	target="_blank"><i class="fab fa-linkedin-in"></i></a><p>LinkedIn</p></li>
 						</ul>
 					</div>
 				</div>
-			</div>
-		</div>
+	</aside>
 
-
-		<div class="flex-2">
+	<div class="right-column">
+		<main>
 			<div class="wrapper">
 				<div class="articles">
 					<h2 id="about">About Me:</h2>
@@ -87,9 +90,9 @@
 
 					<article>
 						<h3>Projects</h3>
-						<ul>
-							<li id="topicLI"> <a href="https://github.com/kouroshgz/Steam-Avatar-Downloader" target="_blank">Steam-Avatar-Downloader</a></li>
-								<ul>
+						<ul class="project">
+							<li > <a href="https://github.com/kouroshgz/Steam-Avatar-Downloader" target="_blank">Steam-Avatar-Downloader</a></li>
+								<ul class="subproject">
 									<li> <p>Python 3.8.3, Beautiful Soup 4, Pycharm Community Edition</p></li>
 									<li><p>A CLI web scraping script created in Python utilizing the Beautiful Soup 4 library to extract data from
 									html files.
@@ -101,11 +104,10 @@
 					</article>
 				</div>
 			</div>
-		</div>
-
-
-	</main>
-
+		</main>	
+	
+	</div>
+</div>
 
 
 </body>
