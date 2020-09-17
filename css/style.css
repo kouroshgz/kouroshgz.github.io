@@ -300,3 +300,8 @@ article p , article h3{
 .subproject li{
 	list-style: disc;
 }
+
+.wrapperResume {
+	margin-left: 30px;
+	border: 2px black solid;
+}
