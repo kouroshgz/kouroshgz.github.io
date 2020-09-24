@@ -1,3 +1,4 @@
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,7 +53,6 @@ body{
 	background:#66023C;
 	background-color: #66023c;
 	background-image: url("https://www.transparenttextures.com/patterns/subtle-zebra-3d.png");
-	
 	color: white;
 	font-family: "CircularStd", sans-serif;
 	
@@ -65,63 +65,69 @@ body{
 }
 
 /*========= Header Style ==========*/
-.header-wrapper{
-	
-	/*
-	width: 100%;
-	height: 100%;
-	*/
-
-}
-
-.page-header{
-	
-	height: 45px;
-	width: 100%;
-
-	background: black;
-	border: 2px solid black;
-}
-
-.page-header .header-wrapper{
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-
 .logo{
-	font-size: 23px;
+	font-size: 30px;
+	line-height: 80px;
+	font-weight: bold;
+	padding: 0 100px;
 }
 
 
 .header-nav{
-	font-size: 20px;
+	background: black;
+	border-radius: 4px;
+	width: 100%;
+	height: 80px;
 }
+
 .header-nav ul{
-	display: flex;	
+	float: right;
+	margin-right: 100px;
 }
 
-.header-nav ul a{
+.header-nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin:	0 5px;
+}
+
+nav ul .contact-head{
+	display: none;
+}
+.header-nav ul li a{
+	border: 1px solid white;
 	color: white;
+	font-size: 17px;
 	text-transform: uppercase;
-	line-height: 66px; /* centers list items by matching header height */
 	text-decoration: none; /* eliminates underline of links */
-	padding: 0 35px;
+	padding: 7px 13px;
 }
 
-.header-nav ul a:hover{
-	color: #59f7da;
+.header-nav ul li a:hover, active{
+	/*color: #59f7da;*/
+	color: black;
+	background: white;
+	transition: .5s;
+}
+
+.check-button{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display:none;
+}
+
+#check{
+	display: none;
 }
 
 /*============= Aside ============*/
 .left-column{
 	display: flex;
 	flex-direction: column;
-	/*
-	margin-left: 5px;
-	margin-right: 12px;
-	*/
-	/*width: 300px*/;
 	box-sizing: content-box;
 	
 }
@@ -131,23 +137,18 @@ body{
 	margin-right: 20px;
 	border: 1px solid white;
 	background: rgba(0,0,0);
-	/*width: 300px;*/
 }
 
 .contact-wrapper{
 	margin-top: 10px;
 	border: 2px solid black;
 	background: black;
-	/*width:300px;*/
 	}
 
 
 /*============= Main =============*/
 .row{
 	display: flex;
-	/*
-	width: 100%
-	*/
 	margin-right: 15px;
 }
 
@@ -223,13 +224,12 @@ article{
 	padding-top: 10px;
 	box-sizing: border-box;
 	border: 1px solid white;
-
-
-
 }
+
 
 article p , article h3{
 	margin-left: 10px;
+	padding-right: 10px;
 }
 
 
@@ -378,7 +378,7 @@ img { max-width: 100%; height: auto; }
 	.contact-wrapper{
 		width: 80%;
 	}
-	.logo{
+	.name{
 		font-size: 20px;
 	}
 
@@ -416,8 +416,8 @@ img { max-width: 100%; height: auto; }
 }
 
 
-@media screen and (max-width: 900px) {
-	.logo{
+@media screen and (max-width: 952px) {
+	.name{
 		font-size: 15px;
 	}
 	.row{
@@ -441,9 +441,19 @@ img { max-width: 100%; height: auto; }
 		margin-bottom: 10%;
 		margin-left: 5%;
 	}
+
+	label .logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+
+	nav ul li a{
+		font-size: 16px;
+	}
 }
 
-@media screen and (max-width: 600px){
+/* was 600px */
+@media screen and (max-width: 858px){
 	.contact p{
 		font-size: 15px;
 	}
@@ -457,18 +467,70 @@ img { max-width: 100%; height: auto; }
 	.left-column{
 		width: 40%;
 	}
+
+
+	.check-button{
+		display: block;
+	}
+	.header-nav ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		top: 80px;
+		left:-100%;
+		text-align: center;
+		transition: all .5s;
+		background:  black;
+
+	}
+	nav ul li{
+		margin: 50px 0;
+		line-height: 30px;
+		font-weight: bold;
+
+
+	}
+
+	nav ul li a{
+		font-size: 20px;
+	}
+
+	#check:checked ~ ul{
+		left: 0;
+	}
 }
 
-@media screen and (max-width: 400px){
-	.contact ul {
-		width: 60%;
+
+@media screen and (max-width: 445px){
+	
+	.right-column{
+		width: 50%;
 	}
-	.contact li p{
-		margin-top: 5px;
-	}
-	.contact i {
+
+	h3::after{
 		width: 80%;
 	}
-	
+
+	#contactTitle::after{
+		width: 80%;
+	}
+	#contactTitle{
+		font-size: 17px;
+	}
+
+	.header-nav a{
+		float: left;
+		font-size: 18px;
+
+	}
+	.contact ul li{
+		width: 100%;
+	}
+
+	.logo{
+		font-size: 25px;
+		padding: 0 40px;
+	}
 
 }
+
