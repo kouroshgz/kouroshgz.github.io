@@ -222,6 +222,7 @@ article{
 	float: left;
 	background: rgba(0,0,0,.5);
 	padding-top: 10px;
+	padding-bottom: 5px;
 	box-sizing: border-box;
 	border: 1px solid white;
 }
@@ -248,10 +249,6 @@ article p , article h3{
 	color: #fff;
 }
 
-.contact{
-	/*height: 326px;*/
-}
-
 #bio{
 	margin-top: 10px;
 	line-height: 18px;
@@ -264,12 +261,6 @@ article p , article h3{
 	box-sizing: border-box;
 }
 
-
-.contact li{
-	/*
-	margin: 10px 40px 30px; 
-	*/
-}
 
 .contact a{
 	display: inline-block;
@@ -350,7 +341,7 @@ img { max-width: 100%; height: auto; }
 	}
 	.contact-wrapper{
 		width: 90%;
-		height: 80%;
+		height: auto;
 	}
 	.contact li {
 		margin-bottom: 8%;
